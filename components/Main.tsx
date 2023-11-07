@@ -42,7 +42,8 @@ export const Main = () => {
 
   const onSubmit = async () => {
     if (!isValid && 'title' in errors) {
-      toast.error(errors?.title?.message);
+      const errorMessage = errors?.title?.message || 'Oops, Something went wrong';
+      toast.error(errorMessage as string);
       return;
     }
 
