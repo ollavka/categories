@@ -1,0 +1,32 @@
+.button {
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.08);
+}
+
+.purple {
+  background: linear-gradient(0deg, #884DFE 0%, #884DFE 100%), linear-gradient(104deg, #A139FD 11.26%, #50BDFC 90.79%);
+}
+
+.green {
+  background-color: #45CB54;
+}
+
+.gradient {
+  background: linear-gradient(104deg, #A139FD 11.26%, #50BDFC 90.79%);;
+}
+
+.outlined {
+  border: 3px solid #424454;
+}
+
+.cancel {
+  color: #FF5B5B;
+  background-color: transparent;
+  transition: 0.3s color ease, 0.3s background-color ease;
+  box-shadow: none;
+}
+
+.cancel:hover {
+  opacity: 1 !important;
+  background-color: #FF5B5B;
+  color: #fff;
+}
