@@ -30,7 +30,7 @@ export const RemoveCategoryModal: FC<Props> = (props) => {
     >
       <ModalOverlay />
       <ModalContent className="px-[8px] py-[16px] bg-main">
-        <ModalHeader className="text-center font-medium text-[24px]">
+        <ModalHeader className="text-center font-medium text-[24px] text-white">
           {`Delete the ${title || 'Category'}?`}
         </ModalHeader>
         <ModalCloseButton />
