@@ -61,7 +61,6 @@ export const Main = () => {
       data = [newCategory, ...data];
 
       setCategories((prev) => [newCategory, ...prev]);
-      setInitCategories((prev) => [newCategory, ...prev]);
 
       try {
         await categoriesApi.createCategory(newCategory);
@@ -80,6 +79,7 @@ export const Main = () => {
 
     setCreateNewCategory(false);
     setCategoriesChanged(false);
+    setInitCategories(data);
     form.reset();
 
     toast.success('Success');

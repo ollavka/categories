@@ -29,7 +29,7 @@ export const RemoveCategoryModal: FC<Props> = (props) => {
       motionPreset="slideInBottom"
     >
       <ModalOverlay />
-      <ModalContent className="px-[8px] py-[16px]">
+      <ModalContent className="px-[8px] py-[16px] bg-main">
         <ModalHeader className="text-center font-medium text-[24px]">
           {`Delete the ${title || 'Category'}?`}
         </ModalHeader>
