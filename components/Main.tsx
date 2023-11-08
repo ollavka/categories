@@ -52,6 +52,8 @@ export const Main = () => {
     const { title } = form.getValues();
 
     if (title) {
+      setCreateNewCategory(false);
+
       const newCategory: ICategory = {
         id: uuidv4(),
         title,
@@ -77,7 +79,6 @@ export const Main = () => {
       return;
     }
 
-    setCreateNewCategory(false);
     setCategoriesChanged(false);
     setInitCategories(data);
     form.reset();
